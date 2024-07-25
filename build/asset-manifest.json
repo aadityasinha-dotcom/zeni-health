@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1509ec57.chunk.css",
+    "main.js": "/static/js/main.269f3897.chunk.js",
+    "main.js.map": "/static/js/main.269f3897.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.be4a0cbb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.be4a0cbb.js.map",
+    "static/js/2.e078ff44.chunk.js": "/static/js/2.e078ff44.chunk.js",
+    "static/js/2.e078ff44.chunk.js.map": "/static/js/2.e078ff44.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.1509ec57.chunk.css.map": "/static/css/main.1509ec57.chunk.css.map",
+    "static/js/2.e078ff44.chunk.js.LICENSE.txt": "/static/js/2.e078ff44.chunk.js.LICENSE.txt",
+    "static/media/goku.jpg": "/static/media/goku.a632db44.jpg",
+    "static/media/pic1.94307a40.jpg": "/static/media/pic1.94307a40.jpg",
+    "static/media/svg-1.f0190e09.svg": "/static/media/svg-1.f0190e09.svg",
+    "static/media/svg-2.b83f3798.svg": "/static/media/svg-2.b83f3798.svg",
+    "static/media/svg-3.a5bed316.svg": "/static/media/svg-3.a5bed316.svg",
+    "static/media/video.217bc138.mp4": "/static/media/video.217bc138.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.be4a0cbb.js",
+    "static/js/2.e078ff44.chunk.js",
+    "static/css/main.1509ec57.chunk.css",
+    "static/js/main.269f3897.chunk.js"
+  ]
+}
