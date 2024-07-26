@@ -1,24 +1,24 @@
 import React from 'react';
-import { ServicesContainer, ServicesH1, ServicesWrapper, ServicesCard,
+import { ServicesContainer, ServicesH1, ServicesH2, ServicesWrapper, ServicesCard,
 ServicesP
 } from './ServicesElements';
 
 const Services = () => {
   return (
     <ServicesContainer id="services">
-        <ServicesH1>Our Services</ServicesH1>
+        <ServicesH2>Our Services</ServicesH2>
         <ServicesWrapper>
             <ServicesCard>
-                <ServicesH1>Reduce expences</ServicesH1>
-                <ServicesP>We help to reduce your fees
-                    and increase your revenue. When you decide to engage our IT services, you embark on a transformative journey of growth and success.                 
+                <ServicesH1>Direct/Permanent Hire:</ServicesH1>
+                <ServicesP>
+                  Our advanced algorithms and data-driven insights consistently deliver optimal candidate choices, significantly 
+                  reducing the time and effort required in the hiring process while enhancing the overall recruitment outcomes.
                 </ServicesP>
             </ServicesCard>
             <ServicesCard>
-                <ServicesH1>Innovative Ideas</ServicesH1>
+                <ServicesH1>Our Specialization:</ServicesH1>
                 <ServicesP>
-                  Driven by passion and fueled by a relentless pursuit of innovation,
-                  our IT service team excels in areas such as data analytics, DevOps, cloud solutions, Java programming, and more.
+                  We excel at sourcing Nurses, LPNs/LVNs, Social Workers, Medical Assistants, and Certified Nursing Assistants. Our professionals adeptly accommodate a multitude of facilities, including acute care, long-term care, rehab, behavioral health centers, home care, urgent clinics, and more.
                 </ServicesP>
             </ServicesCard>
             <ServicesCard>
