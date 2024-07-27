@@ -50,12 +50,11 @@ export const ServicesCard = styled.div`
     cursor: pointer;
     padding: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-    transition: all 0.2s ease-in-out
 
     &:hover {
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
-        background-color: yellow;
+        background-color: #00B9F1;
     }
 `;
 
@@ -70,6 +69,7 @@ export const ServicesH1 = styled.h1`
     font-size: 2rem;
     color: black;
     padding-top: 110px;
+    margin-left: 20px;
     margin-bottom: 20px;
 
     @media screen and (max-width: 480px) {
