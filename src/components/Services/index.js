@@ -6,7 +6,7 @@ ServicesP
 const Services = () => {
   return (
     <ServicesContainer id="services">
-        <ServicesH2>Our Services</ServicesH2>
+        <ServicesH2>Talent Delivery Models</ServicesH2>
         <ServicesWrapper>
             <ServicesCard>
                 <ServicesH1>Direct/Permanent Hire:</ServicesH1>
