@@ -5,12 +5,15 @@ import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
+import Checkbox from '@mui/material/Checkbox';
+
+const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
   padding: theme.spacing(1),
-  textAlign: 'center',
+  textAlign: 'left',
   color: theme.palette.text.secondary,
 }));
 
@@ -33,19 +36,34 @@ const Solutions = () => {
       {/*     </SolutionsRow> */}
       {/*   </SolutionsWrapper> */}
       {/* </SolutionsContainer> */}
+      <TextWrapper>
+        <SolutionsH1>Nursing Workforce Solutions:</SolutionsH1>
+      </TextWrapper>
       <Box sx={{ width: '80%' }}>
-        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+        <Grid container rowSpacing={1} columns={20} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
           <Grid item xs={6}>
-            <Item>1</Item>
+            <Item>
+              <Checkbox {...label} disabled checked />
+              Nurse Practitioner
+            </Item>
           </Grid>
           <Grid item xs={6}>
-            <Item>2</Item>
+            <Item>
+              <Checkbox {...label} disabled checked />
+              Nurse Educator
+            </Item>
           </Grid>
           <Grid item xs={6}>
-            <Item>3</Item>
+            <Item>
+              <Checkbox {...label} disabled checked />
+              Mental Health Nursing
+            </Item>
           </Grid>
           <Grid item xs={6}>
-            <Item>4</Item>
+            <Item>
+              <Checkbox {...label} disabled checked />
+              Registered Nurse (All Units)
+            </Item>
           </Grid>
         </Grid>
       </Box>

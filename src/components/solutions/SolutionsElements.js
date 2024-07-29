@@ -88,7 +88,7 @@ export const SolutionsH1 = styled.h1`
     font-size: 2rem;
     color: black;
     text-align: center;
-    padding-top: -110px;
+    padding-top: 20px;
     margin-left: 240px;
     margin-bottom: 20px;
 
