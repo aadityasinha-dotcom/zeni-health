@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const SolutionsDiv = styled.div`
-    height: 800px;
+    height: 2500px;
     max-width: 2100px;
     flex-direction: column;
     justify-content: center;
@@ -37,20 +37,19 @@ export const SolutionsContainer = styled.div`
 `;
 
 export const SolutionsWrapper = styled.div`
-    display: grid;
+    display: flex;
     z-index: 1;
-    height: 860px;
-    width: 100%;
-    max-width: 2100px;
+    height: auto;
+    max-width: 1500px;
     position: relative;
     top: 0;
     right: 20px;
     bottom: 0;
     left: -114px;
 
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0px 0px;
+    margin-right: 100px;
+    margin-left: 450px;
+    padding-bottom: 10px;
     justify-content: center;
 `
 
@@ -81,7 +80,7 @@ export const TextWrapper = styled.div`
     max-width: 1740px;
     align-items: center;
     padding-top: 0px;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
 `;
 
 export const SolutionsH1 = styled.h1`
@@ -89,7 +88,7 @@ export const SolutionsH1 = styled.h1`
     color: black;
     text-align: center;
     padding-top: 20px;
-    margin-left: 240px;
+    margin-left: 100px;
     margin-bottom: 20px;
 
     @media screen and (max-width: 480px) {
@@ -98,7 +97,7 @@ export const SolutionsH1 = styled.h1`
 `;
 
 export const SolutionsH2 = styled.div`
-    max-width: 1240px;
+    max-width: 1340px;
     margin-left: 250px;
     margin-bottom: 75px;
     font-size: 15px;
