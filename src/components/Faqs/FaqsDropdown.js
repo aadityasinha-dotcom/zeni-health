@@ -35,56 +35,53 @@ const FaqsDropdown = ({ faqs }) => {
   return (
     <FaqsDiv>
       <FaqsWrapper>
-        {faqs.map((faq, index) => (
-          { faq.question }
-        ))}
-      <ButtonGroup
-        variant="contained"
-        ref={anchorRef}
-        aria-label="Button group with a nested menu"
-      >
-        <Button
-          size="small"
-            aria-controls={open ? 'split-button-menu' : undefined}
-            aria-expanded={open ? 'true' : undefined}
-            aria-label="select merge strategy"
-            aria-haspopup="menu"
-            onClick={handleToggle}
+        <ButtonGroup
+          variant="contained"
+          ref={anchorRef}
+          aria-label="Button group with a nested menu"
         >
-          What is healthcare Staffing
-          <ArrowDropDownIcon />
-        </Button>
-      </ButtonGroup>
-      <Popper
-        sx={{
-          zIndex: 1,
-        }}
-        open={open}
-        anchorEl={anchorRef.current}
-        role={undefined}
-        transition
-        disablePortal
-      >
-        {({ TransitionProps, placement }) => (
-          <Grow
-            {...TransitionProps}
-            style={{
-              transformOrigin:
-                placement === 'bottom' ? 'center top' : 'center bottom',
-            }}
+          <Button
+            size="small"
+              aria-controls={open ? 'split-button-menu' : undefined}
+              aria-expanded={open ? 'true' : undefined}
+              aria-label="select merge strategy"
+              aria-haspopup="menu"
+              onClick={handleToggle}
           >
-            <Paper>
-              <ClickAwayListener onClickAway={handleClose}>
-                <MenuList id="split-button-menu" autoFocusItem>
-                  <MenuItem>
-                    It's the placement of healthcare professionals in various roles at healthcare facilities.
-                  </MenuItem>
-                </MenuList>
-              </ClickAwayListener>
-            </Paper>
-          </Grow>
-        )}
-      </Popper>
+            What is healthcare Staffing
+            <ArrowDropDownIcon />
+          </Button>
+        </ButtonGroup>
+        <Popper
+          sx={{
+            zIndex: 1,
+          }}
+          open={open}
+          anchorEl={anchorRef.current}
+          role={undefined}
+          transition
+          disablePortal
+        >
+          {({ TransitionProps, placement }) => (
+            <Grow
+              {...TransitionProps}
+              style={{
+                transformOrigin:
+                  placement === 'bottom' ? 'center top' : 'center bottom',
+              }}
+            >
+              <Paper>
+                <ClickAwayListener onClickAway={handleClose}>
+                  <MenuList id="split-button-menu" autoFocusItem>
+                    <MenuItem>
+                      It's the placement of healthcare professionals in various roles at healthcare facilities.
+                    </MenuItem>
+                  </MenuList>
+                </ClickAwayListener>
+              </Paper>
+            </Grow>
+          )}
+        </Popper>
       </FaqsWrapper>
     </FaqsDiv>
   );
