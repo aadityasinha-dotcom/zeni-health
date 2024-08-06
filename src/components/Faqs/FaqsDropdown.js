@@ -34,7 +34,8 @@ const FaqsDropdown = ({ faqs }) => {
 
   return (
     <FaqsDiv>
-      <FaqsWrapper>
+      {faqs.map((faq, index) => (
+      <FaqsWrapper key={index}>
         <ButtonGroup
           variant="contained"
           ref={anchorRef}
@@ -48,7 +49,7 @@ const FaqsDropdown = ({ faqs }) => {
               aria-haspopup="menu"
               onClick={handleToggle}
           >
-            What is healthcare Staffing
+            {faq.question}
             <ArrowDropDownIcon />
           </Button>
         </ButtonGroup>
@@ -74,7 +75,7 @@ const FaqsDropdown = ({ faqs }) => {
                 <ClickAwayListener onClickAway={handleClose}>
                   <MenuList id="split-button-menu" autoFocusItem>
                     <MenuItem>
-                      It's the placement of healthcare professionals in various roles at healthcare facilities.
+                      {faq.answer}
                     </MenuItem>
                   </MenuList>
                 </ClickAwayListener>
@@ -83,6 +84,7 @@ const FaqsDropdown = ({ faqs }) => {
           )}
         </Popper>
       </FaqsWrapper>
+      ))}
     </FaqsDiv>
   );
 };

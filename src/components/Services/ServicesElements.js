@@ -50,11 +50,16 @@ export const ServicesCard = styled.div`
     cursor: pointer;
     padding: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid #00B9F1;
 
     &:hover {
-        transform: scale(1.02);
+        transform: scale(1);
         transition: all 0.2s ease-in-out;
         background-color: #00B9F1;
+    }
+    &:hover h1,
+    &:hover p {
+      color: white;
     }
 `;
 
@@ -86,7 +91,7 @@ export const ServicesH2 = styled.h1`
     }
 `;
 
-export const ServicesP = styled.div`
+export const ServicesP = styled.p`
     font-size: 1rem;
     padding-top: 20px;
     color: black;

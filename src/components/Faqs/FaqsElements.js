@@ -31,7 +31,7 @@ export const FaqsWrapper = styled.div`
     margin-right: 100px;
     margin-left: 450px;
     padding-bottom: 10px;
-    justify-content: center;
+    justify-content: flex;
 `
 
 export const FaqsH1 = styled.h1`

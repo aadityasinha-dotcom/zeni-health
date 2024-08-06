@@ -5,7 +5,7 @@ ServicesP
 
 const Services = () => {
   return (
-    <ServicesContainer id="services">
+    <ServicesContainer id="delivery">
         <ServicesH2>Talent Delivery Models</ServicesH2>
         <ServicesWrapper>
             <ServicesCard>

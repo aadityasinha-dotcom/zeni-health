@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { homeObjOne } from '../components/InfoSection/Data';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
+import InfoSection1 from '../components/InfoSection1';
 import Services from '../components/Services';
 import Footer from '../components/Footer';
 import Solutions from "../components/Solutions";
@@ -23,9 +24,10 @@ const Home = () => {
     <Navbar toggle={toggle} />
     <HeroSection />
     <Services />
-    <Solutions />
-    <Faqs />
     <InfoSection {...homeObjOne} />
+    <Solutions />
+    {/* <Faqs /> */}
+    <InfoSection1 {...homeObjOne} />
     <Footer />
     </>
     );

@@ -20,7 +20,7 @@ const Item = styled(Paper)(({ theme }) => ({
 const Solutions = () => {
 
   return (
-    <SolutionsDiv>
+    <SolutionsDiv id="solutions">
       {/* <SolutionsContainer id="solutions"> */}
       {/*   <SolutionsWrapper> */}
       {/*     <SolutionsRow imgStart={false}> */}

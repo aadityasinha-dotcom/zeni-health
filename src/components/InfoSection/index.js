@@ -1,55 +1,58 @@
 import React from 'react';
-import {Button} from '../ButtonElements';
-import {InfoContainer, InfoWrapper, InfoRow, Column1,Column2,TextWrapper,
-TopLine, Heading, Subtitle, BtnWrap, Img, ImgWrap
+import { ServicesContainer, ServicesH1, ServicesH2, ServicesWrapper, ServicesCard, ServiceIcon,
+ServicesP
 } from './infoElements';
-import image from '../../images/pic1.jpg';
+import img1 from '../../images/industry-leading.jpeg';
+import img2 from '../../images/hiring-diversity.png';
+import img3 from '../../images/comprehensive-health-care.jpg';
+import img4 from '../../images/safety.png';
+import img5 from '../../images/collaboration.png';
 
-const InfoSection = (id,
-    lightBg,
-    lightText,
-    lightTextDesc,
-    topLine,
-    headLine,
-    description,
-    buttonLabel,
-    imgStart,
-    img,
-    alt,
-    dark,
-    primary, 
-    darkText) => {
-
-  console.log(description);
+const Services = () => {
   return (
-    <>
-        <InfoContainer lightBg={false} id='about'>
-            <InfoWrapper>
-                <InfoRow imgStart={false}>
-                    <Column1>
-                        <TextWrapper>
-                            {/* <TopLine>hello everyone</TopLine> */}
-                            <Heading lightText={true}>About CoreBuild Technologies</Heading>
-                            <Subtitle darkText={false}>CoreBuild Technologies is a rising IT staffing and solutions company headquartered in New Jersey.
-                              CoreBuild aims to become a leading force in connecting top IT talent
-                              with innovative companies across the state.
-                            </Subtitle>
-                            <Subtitle>Curating a Diverse Talent Pool: They meticulously source and vet highly qualified IT professionals
-                            across various specialties, ensuring they match the specific needs of their clients.</Subtitle>
-                            <Subtitle>Streamlined Recruitment: CoreBuild leverages efficient recruitment processes to identify
-                            and connect the best candidates with the most suitable opportunities.</Subtitle>
-                        </TextWrapper>
-                    </Column1>
-                    <Column2>
-                        <ImgWrap>
-                            <Img src={image} alt='hello'/>
-                        </ImgWrap>
-                    </Column2>
-                </InfoRow>
-            </InfoWrapper>
-        </InfoContainer>
-    </>
+    <ServicesContainer id="services">
+        <ServicesH2>How it Works</ServicesH2>
+        <ServicesWrapper>
+            <ServicesCard>
+                <ServiceIcon src={img1}></ServiceIcon>
+                <ServicesH1>Industry-Leading Expertise</ServicesH1>
+                <ServicesP>
+                  Our recruitment specialists hold firsthand experience in healthcare, enabling them to overcome complex healthcare staffing challenges.
+                </ServicesP>
+            </ServicesCard>
+            <ServicesCard>
+                <ServiceIcon src={img2}></ServiceIcon>
+                <ServicesH1>Diverse Candidate Database</ServicesH1>
+                <ServicesP>
+                  Our extensive candidate database is continually updated, letting us meet your staffing needs while adapting to changing resource requirements.
+                </ServicesP>
+            </ServicesCard>
+            <ServicesCard>
+                <ServiceIcon src={img3}></ServiceIcon>
+                <ServicesH1>Comprehensive Healthcare Workforce Solutions</ServicesH1>
+                <ServicesP>
+                  We cover a broad spectrum of healthcare roles, aiming to elevate healthcare organizational performance.
+                </ServicesP>
+            </ServicesCard>
+        </ServicesWrapper>
+        <ServicesWrapper>
+          <ServicesCard>
+                <ServiceIcon src={img4}></ServiceIcon>
+                <ServicesH1>Patient Care Quality and Safety</ServicesH1>
+                <ServicesP>
+                  Quality care and safety stand as our priority. Concerns about the quality and safety of patient care by our staff can be reported to The Joint Commission’s Office.
+                </ServicesP>
+            </ServicesCard>
+            <ServicesCard>
+                <ServiceIcon src={img5}></ServiceIcon>
+                <ServicesH1>Strategic Collaborations</ServicesH1>
+                <ServicesP>
+                  We proudly partner with major U.S. healthcare organizations, contributing our premier recruitment services to renowned institutions across the country.
+                </ServicesP>
+            </ServicesCard>
+        </ServicesWrapper>
+    </ServicesContainer>
   );
 };
 
-export default InfoSection;
+export default Services;
