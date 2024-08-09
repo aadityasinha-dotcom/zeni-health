@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import {FaBars} from 'react-icons/fa';
-import { Nav, NavbarContainer, 
+import { Nav, NavbarContainer, Logo,
 NavLogo, MobileIcon, NavLinks_1,
 NavMenu, NavItem, NavLinks, 
 NavBtn, NavBtnLink } from './NavbarElements';
 import {animateScroll as scroll} from 'react-scroll';
+import logo from "../../images/zeni-healthcare-high-resolution-logo-transparent.png";
 
 const Navbar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false)
@@ -30,7 +31,7 @@ const Navbar = ({ toggle }) => {
     <>
         <Nav scrollNav={scrollNav}>
             <NavbarContainer>
-                <NavLogo to="/" onClick={toggleHome}>Zeni Healthcare</NavLogo>
+                <NavLogo to="/" onClick={toggleHome}><Logo src={logo}/></NavLogo>
                 <MobileIcon onClick={toggle}>
                     <FaBars />
                 </MobileIcon>
@@ -44,14 +45,14 @@ const Navbar = ({ toggle }) => {
                         >Delivery Models</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="solutions"
-                        smooth={true} duration={500} spy={true} exact={true} offset={-80}
-                        >Solutions</NavLinks>
-                    </NavItem>
-                    <NavItem>
                         <NavLinks to="services"
                         smooth={true} duration={500} spy={true} exact={true} offset={-80}
                         >How it works</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to="solutions"
+                        smooth={true} duration={500} spy={true} exact={true} offset={-80}
+                        >Solutions</NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks to="signin">Careers</NavLinks>
