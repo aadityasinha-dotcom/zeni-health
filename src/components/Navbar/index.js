@@ -5,7 +5,7 @@ NavLogo, MobileIcon, NavLinks_1,
 NavMenu, NavItem, NavLinks, 
 NavBtn, NavBtnLink } from './NavbarElements';
 import {animateScroll as scroll} from 'react-scroll';
-import logo from "../../images/zeni-healthcare-high-resolution-logo-transparent.png";
+import logo from "../../images/logo.jpeg";
 
 const Navbar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false)

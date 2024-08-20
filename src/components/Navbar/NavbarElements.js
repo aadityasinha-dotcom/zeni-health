@@ -43,10 +43,10 @@ export const NavLogo = styled(LinkR)`
 `;
 
 export const Logo = styled.img`
-    height: 80px;
-    width: 70px;
+    height: 90px;
+    width: 120px;
     padding-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 `;
 
 export const MobileIcon = styled.div`
