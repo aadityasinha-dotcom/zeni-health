@@ -17,7 +17,7 @@ const footer = () => {
                 <FooterLinksWrapper>
                     <FooterLinkItems>
                         <FooterLinkTitle>Company Address</FooterLinkTitle>
-                            <FooterLink to="/signin">healthcare@zenithinfotek.com</FooterLink>
+                            <FooterLink to="/signin">h.goyal@zenithinfotek.com</FooterLink>
                             <FooterLink to="/signin">Careers</FooterLink>
                     </FooterLinkItems>
                 </FooterLinksWrapper>
